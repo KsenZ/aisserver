@@ -7,13 +7,17 @@ PROJECT( aisserver )
 SET( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/CMake )
 
 SET( AISSERVER_SRC
-  src/main.cpp
-#  src/aisserver.cpp
+    src/main.cpp
+    src/aisserver.cpp
+    src/aispg.cpp
+    src/aismsg.cpp
 )
 
-#SET( AISSERVER_MOC_SRC
-#  src/aisserver.h
-#)
+SET( AISSERVER_MOC_SRC
+    src/aisserver.h
+    src/aispg.h
+    src/aismsg.h
+)
 
 SET(BIN_TARGET aisserver)
 
